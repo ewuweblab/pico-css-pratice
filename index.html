@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts -->
+    <script src="js/modal.min.js" defer></script>
     <script src="js/script.js" defer></script>
     
     <title>Jeffrey Zelmdan ( Practice Project )</title>
@@ -35,7 +36,18 @@
     
     <article>
       <figure>
-        <img src="https://portland.aiga.org/wp-content/uploads/2017/10/JZbyJohnMorrisonBW.jpg" alt="">
+
+            <!-- <a href="#" data-target="modal" onClick="toggleModal(event)"">Go Modal</a> -->
+
+
+        <a href="#"
+          data-target="zeldman1"
+          onClick="toggleModal(event)"">
+          
+          <img src="https://portland.aiga.org/wp-content/uploads/2017/10/JZbyJohnMorrisonBW.jpg" alt="">
+        
+        </a>
+
         <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, autem.</figcaption>
       </figure>
     </article>
@@ -87,8 +99,15 @@
       Copyright J. Zeldman <span class="year">0000</span>
     </footer>
 
+
   </main>
 
+  <!-- Modals -->
+  <dialog id="zeldman1" true>
+    <article>
+      <img src="https://portland.aiga.org/wp-content/uploads/2017/10/JZbyJohnMorrisonBW.jpg" alt="J. Zeldman">
+    </article>
+  </dialog>
  
 </body>
 </html>
